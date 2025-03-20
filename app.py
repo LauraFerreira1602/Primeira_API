@@ -6,9 +6,6 @@ app = Flask(__name__)
 def index():
     return 'Hello World!'
 
-if __name__ == '__main__':
-    app.run(debug=True)
-
 
 @app.route('/soma/<num1>/<num2>')
 def soma(num1, num2):
